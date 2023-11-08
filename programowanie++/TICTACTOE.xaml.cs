@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -21,12 +22,26 @@ namespace programowanie__
     /// </summary>
     public partial class TICTACTOE : Window
     {
+        //
+        //
+        //
+        //
+        //
+        //
+        ///
+        //
+        //
+        //
+        //
+        //
+
+
 
         public class GameLogic { 
             
             public string[,] gameField = new string[3,3];
             public bool turnX;
-                
+            public int turn = 0;
             public GameLogic() {
                 for (int row = 0; row < 3; row++)
                 {
@@ -40,27 +55,48 @@ namespace programowanie__
 
             public void turnDone() {
                 turnX = !turnX;
+                turn++;
             }
 
             public bool checkWin() {
                 for (int i = 0; i < 3; i++)
                 {
                     if (gameField[i, 0] != "" && gameField[i, 0] == gameField[i, 1] && gameField[i, 1] == gameField[i, 2])
-                        return true; // Winning row
+                        return true;
 
                     if (gameField[0, i] != "" && gameField[0, i] == gameField[1, i] && gameField[1, i] == gameField[2, i])
-                        return true; // Winning column
+                        return true; 
                 }
 
-                // Check diagonals for a win
+     
                 if (gameField[0, 0] != "" && gameField[0, 0] == gameField[1, 1] && gameField[1, 1] == gameField[2, 2])
-                    return true; // Winning diagonal
+                    return true; 
 
                 if (gameField[0, 2] != "" && gameField[0, 2] == gameField[1, 1] && gameField[1, 1] == gameField[2, 0])
-                    return true; // Winning diagonal
+                    return true; 
 
-                return false; // No winner yet
+                
+                return false; 
             }
+
+            //public string getValue//(/*int row, int col*/) {
+            //return gameField[row, col]; 
+            //return "/_/";
+            //}
+
+            public int row;
+            public int col;
+
+            public string getValue
+            {
+                get {
+                    return gameField[row, col];
+                }
+                set { 
+                    
+                }
+            }
+
 
         }
 
@@ -70,41 +106,48 @@ namespace programowanie__
         private void CreateGrid()
         {
             gameLogic = new GameLogic();
-            // Создаем новый Grid
+
             Grid grid = new Grid();
 
-            // Добавляем строки и столбцы в сетку (3x3)
+
             for (int i = 0; i < 3; i++)
             {
                 grid.RowDefinitions.Add(new RowDefinition());
                 grid.ColumnDefinitions.Add(new ColumnDefinition());
             }
 
-            // Добавляем кнопки в ячейки Grid
+
             for (int row = 0; row < 3; row++)
             {
                 for (int col = 0; col < 3; col++)
                 {
+                    gameLogic.row = row;
+                    gameLogic.col = col;
                     Button button = new Button
                     {
-                        Content = $"Button {row}-{col}",
+                        //Content = $"Button {row}-{col}",
                         HorizontalAlignment = HorizontalAlignment.Stretch,
                         VerticalAlignment = VerticalAlignment.Stretch,
                         IsEnabled = true,
-                            
+                        Content = {Binding gameLogic.getValue}
                     };
-                    
                     button.Click += makeTurn;
-                    Binding binding = new Binding(gameLogic.gameField[row, col]);
+                    //gameLogic.row = row;
+                    //gameLogic.col = col;
+                    //Binding binding = new Binding("getValue");
 
-                    button.SetBinding(Button.ContentProperty, binding);
-                    Grid.SetRow(button, row); // Устанавливаем строку для кнопки
-                    Grid.SetColumn(button, col); // Устанавливаем столбец для кнопки
-                    grid.Children.Add(button); // Добавляем кнопку в Grid
+                    //binding.Source = gameLogic;
+
+                    //button.SetBinding(ContentProperty, binding);
+                    //button.SetBinding(ContentProperty, binding);
+
+                    Grid.SetRow(button, row); 
+                    Grid.SetColumn(button, col);
+                    grid.Children.Add(button); 
                 }
             }
 
-            // Добавляем созданный Grid на окно
+
             Content = grid;
 
 
@@ -115,13 +158,16 @@ namespace programowanie__
             Button bt = (Button)sender;
             int col = Grid.GetColumn(bt);
             int row = Grid.GetRow(bt);
-            MessageBox.Show("col:" + col + "\trow:" + row);
+            //MessageBox.Show("col:" + col + "\trow:" + row);
             gameLogic.gameField[row, col] = (gameLogic.turnX == true) ? "X" : "O";
             gameLogic.turnDone();
             bt.IsEnabled = false;
             if (gameLogic.checkWin()) {
                 MessageBox.Show("win " + ((gameLogic.turnX == true) ? "O":"X"));
 
+            }
+            if (gameLogic.turn == 9) {
+                MessageBox.Show("Draw!");
             }
         }
 
@@ -130,7 +176,7 @@ namespace programowanie__
             
             InitializeComponent();
             CreateGrid();
-             
+            //
         }
     }
 }
