@@ -40,36 +40,26 @@
             <RowDefinition Height ="*"/>
             <RowDefinition Height ="*"/>
         </Grid.RowDefinitions>
-
-        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="2" x:Name="Output" IsReadOnly="True"></TextBox>
-
-
-
-        <Button Grid.Row ="2" Grid.Column="2" Click="braket_Click">(</Button>
-        <Button Grid.Row ="2" Grid.Column="3" Click="braket_Click">)</Button>
-        <Button Grid.Row ="2" Grid.Column="0" Click="Button_Clear">C</Button>
-        <Button Grid.Row ="2" Grid.Column="1" Click="Del_Click">Del</Button>
-
-
-        <Button Grid.Row ="3" Grid.Column="0" Tag="Numer" Name="num" Click="Button_Click">7</Button>
-        <Button Grid.Row ="3" Grid.Column="1" Tag="Numer" Click="Button_Click">8</Button>
-        <Button Grid.Row ="3" Grid.Column="2" Tag="Numer" Click="Button_Click">9</Button>
-        <Button Grid.Row ="3" Grid.Column="3" Tag="Znak" Click="ButtonZnak_Click">/</Button>
-
-        <Button Grid.Row ="4" Grid.Column="0" Tag="Numer" Click="Button_Click">4</Button>
-        <Button Grid.Row ="4" Grid.Column="1" Tag="Numer" Click="Button_Click">5</Button>
-        <Button Grid.Row ="4" Grid.Column="2" Tag="Numer" Click="Button_Click">6</Button>
-        <Button Grid.Row ="4" Grid.Column="3" Tag="Znak" Click="ButtonZnak_Click">*</Button>
-
-        <Button Grid.Row ="5" Grid.Column="0" Tag="Numer" Click="Button_Click">1</Button>
-        <Button Grid.Row ="5" Grid.Column="1" Tag="Numer" Click="Button_Click">2</Button>
-        <Button Grid.Row ="5" Grid.Column="2" Tag="Numer" Click="Button_Click">3</Button>
-        <Button Grid.Row ="5" Grid.Column="3" Tag="Znak"  Click="ButtonZnak_Click">-</Button>
-
-
-        <Button Grid.Row ="6" Grid.Column="0" Tag="Numer" Click="Button_Click">0</Button>
-        <Button Grid.Row ="6" Grid.Column="1" Tag="floatPoint" Click="Button_floatPoint">.</Button>
-        <Button Grid.Row ="6" Grid.Column="2" Tag="DoCalc" Click="Button_Calc">=</Button>
-        <Button Grid.Row ="6" Grid.Column="3" Tag="Znak"  Click="ButtonZnak_Click">+</Button>
+        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Grid.RowSpan="2" x:Name="Output" IsReadOnly="True"/>
+        <Button Grid.Row ="2" Grid.Column="2" Click="braket_Click" Content="("/> 
+        <Button Grid.Row ="2" Grid.Column="3" Click="braket_Click" Content=")"/> 
+        <Button Grid.Row ="2" Grid.Column="0" Click="Button_Clear" Content="C"/> 
+        <Button Grid.Row ="2" Grid.Column="1" Click="Del_Click" Content="Del"/> 
+        <Button Grid.Row ="3" Grid.Column="0" Tag="Numer" Name="num" Click="Button_Click" Content="7"/> 
+        <Button Grid.Row ="3" Grid.Column="1" Tag="Numer" Click="Button_Click" Content="8"/> 
+        <Button Grid.Row ="3" Grid.Column="2" Tag="Numer" Click="Button_Click" Content="9"/> 
+        <Button Grid.Row ="3" Grid.Column="3" Tag="Znak" Click="ButtonZnak_Click" Content="/"/> 
+        <Button Grid.Row ="4" Grid.Column="0" Tag="Numer" Click="Button_Click" Content="4"/> 
+        <Button Grid.Row ="4" Grid.Column="1" Tag="Numer" Click="Button_Click" Content="5"/> 
+        <Button Grid.Row ="4" Grid.Column="2" Tag="Numer" Click="Button_Click" Content="6"/> 
+        <Button Grid.Row ="4" Grid.Column="3" Tag="Znak" Click="ButtonZnak_Click" Content="*"/> 
+        <Button Grid.Row ="5" Grid.Column="0" Tag="Numer" Click="Button_Click" Content="1"/> 
+        <Button Grid.Row ="5" Grid.Column="1" Tag="Numer" Click="Button_Click" Content="2"/> 
+        <Button Grid.Row ="5" Grid.Column="2" Tag="Numer" Click="Button_Click" Content="3"/>
+        <Button Grid.Row ="5" Grid.Column="3" Tag="Znak"  Click="ButtonZnak_Click" Content="-"/>
+        <Button Grid.Row ="6" Grid.Column="0" Tag="Numer" Click="Button_Click" Content="0"/> 
+        <Button Grid.Row ="6" Grid.Column="1" Tag="floatPoint" Click="Button_floatPoint" Content="."/>
+        <Button Grid.Row ="6" Grid.Column="2" Tag="DoCalc" Click="Button_Calc" Content="="/> 
+        <Button Grid.Row ="6" Grid.Column="3" Tag="Znak"  Click="ButtonZnak_Click" Content="+"/> 
     </Grid>
 </Window>

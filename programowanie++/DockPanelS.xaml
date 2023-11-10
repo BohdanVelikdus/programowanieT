@@ -14,43 +14,27 @@
                 <ColumnDefinition Width="8*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-
             <Grid.RowDefinitions>
                 <RowDefinition Height="9*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-
             <DockPanel Grid.Column="0" Grid.ColumnSpan="3" Grid.Row ="0" Grid.RowSpan="2">
-                <Button DockPanel.Dock="Bottom" Height="70" >Bottom</Button>
-                <Button DockPanel.Dock="Left" Width="70">Left</Button>
-
-                <Button DockPanel.Dock="Right" Width="70">Right</Button>
-
+                <Button DockPanel.Dock="Bottom" Height="70" Content="Bottom"/> 
+                <Button DockPanel.Dock="Left" Width="70" Content="Left"/> 
+                <Button DockPanel.Dock="Right" Width="70" Content="Right"/> 
                 <DockPanel >
-                    <Button DockPanel.Dock="Top" Background="Red" Height="104">Top1</Button>
+                    <Button DockPanel.Dock="Top" Background="Red" Height="104" Content="Top1"/> 
                     <Viewbox DockPanel.Dock="Top">
-                        <Button Height="175" Width="175" Background="Green">Top2</Button>
+                        <Button Height="175" Width="175" Background="Green" Content="Top2"/> 
                     </Viewbox>
-
                     <DockPanel>
-                        <Button DockPanel.Dock="Right" Width="100" Height="170" VerticalAlignment="Center">Right2</Button>
-                        <Button DockPanel.Dock="Right" Width="100" Height="170" VerticalAlignment="Center">Right3</Button>
-                        <Button DockPanel.Dock="Top" Height="55" Background="DarkBlue">Top3</Button>
-                        <Button DockPanel.Dock="Bottom" Height="180">Fill</Button>
+                        <Button DockPanel.Dock="Right" Width="100" Height="170" VerticalAlignment="Center" Content="Right2"/>
+                        <Button DockPanel.Dock="Right" Width="100" Height="170" VerticalAlignment="Center" Content="Right3"/>
+                        <Button DockPanel.Dock="Top" Height="55" Background="DarkBlue" Content="Top3"/>
+                        <Button DockPanel.Dock="Bottom" Height="180" Content="Fill"/> 
                     </DockPanel>
-
-
-
                 </DockPanel>
-
             </DockPanel>
-
-
-
         </Grid>
-
-
-
-
     </Grid>
 </Window>

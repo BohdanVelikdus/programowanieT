@@ -12,14 +12,12 @@
             <Setter Property="FontFamily" Value="Arial"/>
             <Setter Property="FontSize" Value="20"/>
             <Setter Property="BorderThickness" Value="2"/>
-
         </Style>
         <Style TargetType="Label">
             <Setter Property="FontFamily" Value="Arial"/>
             <Setter Property="FontSize" Value="10"/>
             <Setter Property="BorderThickness" Value="2"/>
         </Style>
-
         <Style TargetType="TextBox">
             <Setter Property="Width" Value="60"/>
             <Setter Property="FontFamily" Value="Arial"/>
@@ -27,7 +25,6 @@
             <Setter Property="BorderThickness" Value="1"/>
         </Style>
     </Window.Resources>
-
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -45,8 +42,6 @@
                 <Label Content="Semestr" ></Label>
             </StackPanel>
         </Viewbox>
-
-
         <Viewbox Grid.Row="0" Grid.Column="1">
             <StackPanel>
                 <TextBox></TextBox>
@@ -55,7 +50,6 @@
                 <TextBox></TextBox>
             </StackPanel>
         </Viewbox>
-
-        <Button Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">Add to database!</Button>
+        <Button Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Content="Add to database"/> 
     </Grid>
 </Window>
