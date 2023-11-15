@@ -36,18 +36,18 @@
         </Grid.RowDefinitions>
         <Viewbox>
             <StackPanel Grid.Column="0" Grid.Row="0" >
-                <Label Content="Imie"></Label>
-                <Label Content="Nazwisko"></Label>
-                <Label Content="Data urodzin" ></Label>
-                <Label Content="Semestr" ></Label>
+                <Label Content="Imie"/>
+                <Label Content="Nazwisko"/>
+                <Label Content="Data urodzin" />
+                <Label Content="Semestr"/>
             </StackPanel>
         </Viewbox>
         <Viewbox Grid.Row="0" Grid.Column="1">
             <StackPanel>
-                <TextBox></TextBox>
-                <TextBox></TextBox>
-                <TextBox></TextBox>
-                <TextBox></TextBox>
+                <TextBox/>
+                <TextBox/>
+                <TextBox/>
+                <TextBox/>
             </StackPanel>
         </Viewbox>
         <Button Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Content="Add to database"/> 
