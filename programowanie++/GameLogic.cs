@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace programowanie__
 {
@@ -26,6 +22,8 @@ namespace programowanie__
         {
             GameField = new string[9];
         }
+
+
 
         public bool checkWin()
         {

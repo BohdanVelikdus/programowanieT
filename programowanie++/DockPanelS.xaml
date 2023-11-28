@@ -6,6 +6,8 @@
         xmlns:local="clr-namespace:programowanie__"
         mc:Ignorable="d"
         Title="DockPanelS" MinHeight="600" MinWidth="600" ResizeMode="NoResize">
+    
+    
     <Grid>
         <Grid>
             <Grid>

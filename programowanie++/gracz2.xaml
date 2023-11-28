@@ -6,6 +6,8 @@
         xmlns:local="clr-namespace:programowanie__"
         mc:Ignorable="d"
         Title="gracz2" Height="800" Width="800">
+    
+    
     <Window.Resources>
         <local:YesNoToBooleanConverter x:Key="YesNoToBooleanConverter" />
         <local:YesNoToBooleanConverter2 x:Key="YesNoToBooleanConverter2" />

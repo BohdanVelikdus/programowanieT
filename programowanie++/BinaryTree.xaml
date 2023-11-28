@@ -20,6 +20,9 @@
                 <Button Content="Right Grandchild" Width="50" Height="30" Canvas.Left="200" Canvas.Top="200"/>
                 <Button Content="Left Grandchild" Width="50" Height="30" Canvas.Left="300" Canvas.Top="200"/>
                 <Button Content="Right Grandchild" Width="50" Height="30" Canvas.Left="400" Canvas.Top="200"/>
+                
+                
+                
             </Canvas>
         </Grid>
 </Window>
