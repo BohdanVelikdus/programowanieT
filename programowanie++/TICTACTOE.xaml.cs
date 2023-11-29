@@ -12,12 +12,8 @@ namespace programowanie__
     public partial class TICTACTOE : Window
     {
         public GameLogic gameLogic;
-
-
-
         public TICTACTOE()
         {
-
             InitializeComponent();
             gameLogic = new GameLogic();
             DataContext = gameLogic;
@@ -35,20 +31,16 @@ namespace programowanie__
                 }
             }
         }
-
         private void makeTurn(object sender, RoutedEventArgs e)
         {
             Button clickedButton = sender as Button;
-            int index = itemsControl.ItemContainerGenerator.IndexFromContainer(VisualTreeHelper.GetParent(clickedButton));
-            
+            int index = itemsControl.ItemContainerGenerator.IndexFromContainer(VisualTreeHelper.GetParent(clickedButton));  
             //MessageBox.Show("col:" + col + "\trow:" + row);
             string[] gameField = gameLogic.GameField;
             gameField[index] = (gameLogic.turnX == true) ? "X" : "O";
             string[] newField = (string[])gameField.Clone();
-
             gameLogic.GameField = newField;
             gameLogic.turnDone();
-
             if (gameLogic.checkWin())
             {
                 MessageBox.Show("win " + ((gameLogic.turnX == true) ? "O" : "X"));
@@ -60,6 +52,5 @@ namespace programowanie__
                 gameLogic.restart();
             }
         }
-
     }
 }

@@ -11,8 +11,5 @@ namespace programowanie__
         {
             InitializeComponent();
         }
-
-
-
     }
 }

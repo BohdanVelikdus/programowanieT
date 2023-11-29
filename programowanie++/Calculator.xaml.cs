@@ -13,16 +13,11 @@ namespace programowanie__
     /// </summary>
     public partial class Calculator : Window
     {
-
-
-
         public Calculator()
         {
             InitializeComponent();
         }
-
         private List<Button> lastClickedButtons = new List<Button>();
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button)
@@ -31,9 +26,7 @@ namespace programowanie__
                 Output.Text += $"{buttonText}";
                 lastClickedButtons.Add(button);
             }
-
         }
-
         private void ButtonZnak_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button)
@@ -52,10 +45,9 @@ namespace programowanie__
                             break;
                     }
                 }
-                //refactoring
                 else
                 {
-                    if (!(/*lastClickedButtons.Count > 0 &&*/ lastClickedButtons[lastClickedButtons.Count - 1].Tag.ToString() == "Znak"))
+                    if (!(lastClickedButtons[lastClickedButtons.Count - 1].Tag.ToString() == "Znak"))
                     {
                         Output.Text += $"{buttonText}";
                         lastClickedButtons.Add(button);
@@ -65,12 +57,8 @@ namespace programowanie__
                         return;
                     }
                 }
-
-
-
             }
         }
-
         public static string BalanceBrackets(string input)
         {
             int bracketCount = 0;
@@ -87,19 +75,16 @@ namespace programowanie__
                     bracketCount--;
                     if (bracketCount < 0)
                     {
-                        // Insert a closing bracket at the appropriate position
+                        
                         balancedStringBuilder.Insert(i, ")");
-                        bracketCount = 0; // Reset bracket count
+                        bracketCount = 0;
                     }
                 }
             }
-
-            // Add any missing closing brackets at the end
             for (int i = 0; i < bracketCount; i++)
             {
                 balancedStringBuilder.Append(")");
             }
-
             return balancedStringBuilder.ToString();
         }
 
@@ -124,10 +109,7 @@ namespace programowanie__
             {
                 MessageBox.Show("Unexpected exception");
             }
-
-
         }
-
         private void Button_Clear(object sender, RoutedEventArgs e)
         {
             string toEr1char = Output.Text;
@@ -139,10 +121,8 @@ namespace programowanie__
             {
                 Output.Text = toEr1char.Remove(toEr1char.Length - 1);
                 lastClickedButtons.RemoveAt(lastClickedButtons.Count - 1);
-
             }
         }
-
         private void Button_floatPoint(object sender, RoutedEventArgs e)
         {
             if (sender is Button button)
@@ -153,7 +133,6 @@ namespace programowanie__
                     lastClickedButtons.Add(num);
                     lastClickedButtons.Add(button);
                 }
-                //refactoring too
                 else
                 {
                     bool metFloatPoint = false;
@@ -170,7 +149,6 @@ namespace programowanie__
                             break;
                         }
                     }
-
                     if (metFloatPoint)
                     {
                         return;
@@ -180,30 +158,21 @@ namespace programowanie__
                         lastClickedButtons.Add(button);
                         Output.Text += ".";
                     }
-
-
                 }
-
-
-
             }
         }
-
         private void braket_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button)
             {
                 Output.Text += button.Content.ToString();
             }
-
         }
-
         private void Del_Click(object sender, RoutedEventArgs e)
         {
             Output.Text = "";
             lastClickedButtons.Clear();
         }
-
         private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             switch (e.Key)

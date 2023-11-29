@@ -13,9 +13,6 @@ namespace programowanie__
         {
             InitializeComponent();
         }
-
-
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
@@ -24,7 +21,6 @@ namespace programowanie__
             else if (((Game)plnPersonForm.DataContext).PersonIdTwo[Convert.ToInt32(btn.Tag.ToString())] == 1)
                 ((Game)plnPersonForm.DataContext).PersonIdTwo[Convert.ToInt32(btn.Tag.ToString())]--;
         }
-
         private void Button_Click_shot(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;

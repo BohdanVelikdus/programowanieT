@@ -6,12 +6,10 @@ namespace programowanie__
     class Game : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-
         ObservableCollection<int> _PersonIdOne = new ObservableCollection<int>
         { };
         ObservableCollection<int> _PersonIdTwo = new ObservableCollection<int>
         { };
-
         public ObservableCollection<int> PersonIdOne
         {
             get
@@ -24,9 +22,6 @@ namespace programowanie__
                 OnPropertyChanged("PersonId");
             }
         }
-
-
-
         public ObservableCollection<int> PersonIdTwo
         {
             get
@@ -39,7 +34,6 @@ namespace programowanie__
                 OnPropertyChanged("PersonId");
             }
         }
-
         public Game(int[] nPersonIdOne, int[] nPersonIdTwo)
         {
             foreach (int _person in nPersonIdOne)
@@ -51,14 +45,11 @@ namespace programowanie__
             {
                 _PersonIdTwo.Add(_person);
             }
-
         }
-
         protected virtual void OnPropertyChanged(string propertyName)
         {
             var handler = PropertyChanged;
             if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
-
     }
 }

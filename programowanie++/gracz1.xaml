@@ -6,8 +6,6 @@
         xmlns:local="clr-namespace:programowanie__"
         mc:Ignorable="d"
         Title="gracz1" Height="800" Width="800">
-    
-    
     <Window.Resources>
         <local:YesNoToBooleanConverter x:Key="YesNoToBooleanConverter" />
         <local:YesNoToBooleanConverter2 x:Key="YesNoToBooleanConverter2" />
@@ -36,9 +34,7 @@
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
-            
             <RowDefinition />
-
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
@@ -50,7 +46,6 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-
         <Button Grid.Column="0" Grid.Row="0" Content="1,1" Tag="0"  Background="{Binding Path=PersonIdOne[0], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click" />
         <Button Grid.Column="1" Grid.Row="0" Content="1,2" Tag="1" Background="{Binding Path=PersonIdOne[1], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="2" Grid.Row="0" Content="1,3" Tag="2" Background="{Binding Path=PersonIdOne[2], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
@@ -61,7 +56,6 @@
         <Button Grid.Column="7" Grid.Row="0" Content="1,8" Tag="7" Background="{Binding Path=PersonIdOne[7], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="8" Grid.Row="0" Content="1,9" Tag="8" Background="{Binding Path=PersonIdOne[8], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="9" Grid.Row="0" Content="1,10" Tag="9" Background="{Binding Path=PersonIdOne[9], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
-
         <Button Grid.Column="0" Grid.Row="1" Content="2,1" Tag="10" Background="{Binding Path=PersonIdOne[10], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="1" Grid.Row="1" Content="2,2" Tag="11" Background="{Binding Path=PersonIdOne[11], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="2" Grid.Row="1" Content="2,3" Tag="12" Background="{Binding Path=PersonIdOne[12], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
@@ -72,7 +66,6 @@
         <Button Grid.Column="7" Grid.Row="1" Content="2,8" Tag="17" Background="{Binding Path=PersonIdOne[17], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="8" Grid.Row="1" Content="2,9" Tag="18" Background="{Binding Path=PersonIdOne[18], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="9" Grid.Row="1" Content="2,10" Tag="19" Background="{Binding Path=PersonIdOne[19], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
-
         <Button Grid.Column="0" Grid.Row="2" Content="3,1" Tag="20" Background="{Binding Path=PersonIdOne[20], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="1" Grid.Row="2" Content="3,2" Tag="21" Background="{Binding Path=PersonIdOne[21], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="2" Grid.Row="2" Content="3,3" Tag="22" Background="{Binding Path=PersonIdOne[22], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
@@ -83,7 +76,6 @@
         <Button Grid.Column="7" Grid.Row="2" Content="3,8" Tag="27" Background="{Binding Path=PersonIdOne[27], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="8" Grid.Row="2" Content="3,9" Tag="28" Background="{Binding Path=PersonIdOne[28], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="9" Grid.Row="2" Content="3,5" Tag="29"  Background="{Binding Path=PersonIdOne[29], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
-
         <Button Grid.Column="0" Grid.Row="3" Content="4,1" Tag="30" Background="{Binding Path=PersonIdOne[30], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="1" Grid.Row="3" Content="4,2" Tag="31" Background="{Binding Path=PersonIdOne[31], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="2" Grid.Row="3" Content="4,3" Tag="32" Background="{Binding Path=PersonIdOne[32], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
@@ -94,7 +86,6 @@
         <Button Grid.Column="7" Grid.Row="3" Content="4,8" Tag="37" Background="{Binding Path=PersonIdOne[37], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="8" Grid.Row="3" Content="4,9" Tag="38" Background="{Binding Path=PersonIdOne[38], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="9" Grid.Row="3" Content="4,10" Tag="39" Background="{Binding Path=PersonIdOne[39], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
-
         <Button Grid.Column="0" Grid.Row="4" Content="5,1" Tag="40" Background="{Binding Path=PersonIdOne[40], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="1" Grid.Row="4" Content="5,2" Tag="41" Background="{Binding Path=PersonIdOne[41], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="2" Grid.Row="4" Content="5,3" Tag="42" Background="{Binding Path=PersonIdOne[42], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
@@ -105,7 +96,6 @@
         <Button Grid.Column="7" Grid.Row="4" Content="5,3" Tag="47" Background="{Binding Path=PersonIdOne[47], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="8" Grid.Row="4" Content="5,4" Tag="48" Background="{Binding Path=PersonIdOne[48], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="9" Grid.Row="4" Content="5,5" Tag="49" Background="{Binding Path=PersonIdOne[49], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
-
         <Button Grid.Column="0" Grid.Row="5" Content="6,1" Tag="50"  Background="{Binding Path=PersonIdOne[50], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click" />
         <Button Grid.Column="1" Grid.Row="5" Content="6,2" Tag="51" Background="{Binding Path=PersonIdOne[51], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="2" Grid.Row="5" Content="6,3" Tag="52" Background="{Binding Path=PersonIdOne[52], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
@@ -116,8 +106,6 @@
         <Button Grid.Column="7" Grid.Row="5" Content="6,8" Tag="57" Background="{Binding Path=PersonIdOne[57], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="8" Grid.Row="5" Content="6,9" Tag="58" Background="{Binding Path=PersonIdOne[58], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="9" Grid.Row="5" Content="6,10" Tag="59" Background="{Binding Path=PersonIdOne[59], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
-
-
         <Button Grid.Column="0" Grid.Row="6" Content="7,1" Tag="60" Background="{Binding Path=PersonIdOne[60], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="1" Grid.Row="6" Content="7,2" Tag="61" Background="{Binding Path=PersonIdOne[61], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="2" Grid.Row="6" Content="7,3" Tag="62" Background="{Binding Path=PersonIdOne[62], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
@@ -128,7 +116,6 @@
         <Button Grid.Column="7" Grid.Row="6" Content="7,8" Tag="67" Background="{Binding Path=PersonIdOne[67], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="8" Grid.Row="6" Content="7,9" Tag="68" Background="{Binding Path=PersonIdOne[68], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="9" Grid.Row="6" Content="7,10" Tag="69" Background="{Binding Path=PersonIdOne[69], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
-
         <Button Grid.Column="0" Grid.Row="7" Content="8,1" Tag="70" Background="{Binding Path=PersonIdOne[70], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="1" Grid.Row="7" Content="8,2" Tag="71" Background="{Binding Path=PersonIdOne[71], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="2" Grid.Row="7" Content="8,3" Tag="72" Background="{Binding Path=PersonIdOne[72], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
@@ -139,9 +126,6 @@
         <Button Grid.Column="7" Grid.Row="7" Content="8,8" Tag="77" Background="{Binding Path=PersonIdOne[77], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="8" Grid.Row="7" Content="8,9" Tag="78" Background="{Binding Path=PersonIdOne[78], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="9" Grid.Row="7" Content="8,5" Tag="79"  Background="{Binding Path=PersonIdOne[79], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
-
-
-
         <Button Grid.Column="0" Grid.Row="8" Content="9,1" Tag="80" Background="{Binding Path=PersonIdOne[80], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="1" Grid.Row="8" Content="9,2" Tag="81" Background="{Binding Path=PersonIdOne[81], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="2" Grid.Row="8" Content="9,3" Tag="82" Background="{Binding Path=PersonIdOne[82], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
@@ -152,10 +136,6 @@
         <Button Grid.Column="7" Grid.Row="8" Content="9,8" Tag="87" Background="{Binding Path=PersonIdOne[87], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="8" Grid.Row="8" Content="9,9" Tag="88" Background="{Binding Path=PersonIdOne[88], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="9" Grid.Row="8" Content="9,10" Tag="89" Background="{Binding Path=PersonIdOne[89], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
-
-
-
-
         <Button Grid.Column="0" Grid.Row="9" Content="10,1" Tag="90" Background="{Binding Path=PersonIdOne[90], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="1" Grid.Row="9" Content="10,2" Tag="91" Background="{Binding Path=PersonIdOne[91], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="2" Grid.Row="9" Content="10,3" Tag="92" Background="{Binding Path=PersonIdOne[92], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
@@ -166,12 +146,7 @@
         <Button Grid.Column="7" Grid.Row="9" Content="10,3" Tag="97" Background="{Binding Path=PersonIdOne[97], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="8" Grid.Row="9" Content="10,4" Tag="98" Background="{Binding Path=PersonIdOne[98], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
         <Button Grid.Column="9" Grid.Row="9" Content="10,5" Tag="99" Background="{Binding Path=PersonIdOne[99], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter}}" Click="Button_Click"/>
-
-
-
         <Button Content="Strzelam" Grid.Row="10" Grid.ColumnSpan="10" />
-
-
         <Button Grid.Column="0" Grid.Row="11" Content="1,1" Tag="0"  Background="{Binding Path=PersonIdTwo[0], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot" />
         <Button Grid.Column="1" Grid.Row="11" Content="1,2" Tag="1" Background="{Binding Path=PersonIdTwo[1], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot" />
         <Button Grid.Column="2" Grid.Row="11" Content="1,3" Tag="2" Background="{Binding Path=PersonIdTwo[2], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
@@ -182,8 +157,6 @@
         <Button Grid.Column="7" Grid.Row="11" Content="1,8" Tag="7" Background="{Binding Path=PersonIdTwo[7], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="8" Grid.Row="11" Content="1,9" Tag="8" Background="{Binding Path=PersonIdTwo[8], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="9" Grid.Row="11" Content="1,10" Tag="9" Background="{Binding Path=PersonIdTwo[9], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
-
-
         <Button Grid.Column="0" Grid.Row="12" Content="2,1" Tag="10"  Background="{Binding Path=PersonIdTwo[10], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot" />
         <Button Grid.Column="1" Grid.Row="12" Content="2,2" Tag="11" Background="{Binding Path=PersonIdTwo[11], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="2" Grid.Row="12" Content="2,3" Tag="12" Background="{Binding Path=PersonIdTwo[12], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
@@ -194,8 +167,6 @@
         <Button Grid.Column="7" Grid.Row="12" Content="2,8" Tag="17" Background="{Binding Path=PersonIdTwo[17], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="8" Grid.Row="12" Content="2,9" Tag="18" Background="{Binding Path=PersonIdTwo[18], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="9" Grid.Row="12" Content="2,10" Tag="19" Background="{Binding Path=PersonIdTwo[19], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
-
-
         <Button Grid.Column="0" Grid.Row="13" Content="3,1" Tag="20"  Background="{Binding Path=PersonIdTwo[20], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot" />
         <Button Grid.Column="1" Grid.Row="13" Content="3,2" Tag="21" Background="{Binding Path=PersonIdTwo[21], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="2" Grid.Row="13" Content="3,3" Tag="22" Background="{Binding Path=PersonIdTwo[22], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
@@ -206,8 +177,6 @@
         <Button Grid.Column="7" Grid.Row="13" Content="3,8" Tag="27" Background="{Binding Path=PersonIdTwo[27], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="8" Grid.Row="13" Content="3,9" Tag="28" Background="{Binding Path=PersonIdTwo[28], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="9" Grid.Row="13" Content="3,10" Tag="29" Background="{Binding Path=PersonIdTwo[29], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
-
-
         <Button Grid.Column="0" Grid.Row="14" Content="4,1" Tag="30"  Background="{Binding Path=PersonIdTwo[30], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot" />
         <Button Grid.Column="1" Grid.Row="14" Content="4,2" Tag="31" Background="{Binding Path=PersonIdTwo[31], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="2" Grid.Row="14" Content="4,3" Tag="32" Background="{Binding Path=PersonIdTwo[32], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
@@ -218,7 +187,6 @@
         <Button Grid.Column="7" Grid.Row="14" Content="4,8" Tag="37" Background="{Binding Path=PersonIdTwo[37], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="8" Grid.Row="14" Content="4,9" Tag="38" Background="{Binding Path=PersonIdTwo[38], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="9" Grid.Row="14" Content="4,10" Tag="39" Background="{Binding Path=PersonIdTwo[39], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
-
         <Button Grid.Column="0" Grid.Row="15" Content="5,1" Tag="40"  Background="{Binding Path=PersonIdTwo[40], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot" />
         <Button Grid.Column="1" Grid.Row="15" Content="5,2" Tag="41" Background="{Binding Path=PersonIdTwo[41], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="2" Grid.Row="15" Content="5,3" Tag="42" Background="{Binding Path=PersonIdTwo[42], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
@@ -229,7 +197,6 @@
         <Button Grid.Column="7" Grid.Row="15" Content="5,8" Tag="47" Background="{Binding Path=PersonIdTwo[47], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="8" Grid.Row="15" Content="5,9" Tag="48" Background="{Binding Path=PersonIdTwo[48], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="9" Grid.Row="15" Content="5,10" Tag="49" Background="{Binding Path=PersonIdTwo[49], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
-
         <Button Grid.Column="0" Grid.Row="16" Content="6,1" Tag="50"  Background="{Binding Path=PersonIdTwo[50], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot" />
         <Button Grid.Column="1" Grid.Row="16" Content="6,2" Tag="51" Background="{Binding Path=PersonIdTwo[51], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="2" Grid.Row="16" Content="6,3" Tag="52" Background="{Binding Path=PersonIdTwo[52], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
@@ -240,8 +207,6 @@
         <Button Grid.Column="7" Grid.Row="16" Content="6,8" Tag="57" Background="{Binding Path=PersonIdTwo[57], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="8" Grid.Row="16" Content="6,9" Tag="58" Background="{Binding Path=PersonIdTwo[58], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="9" Grid.Row="16" Content="6,10" Tag="59" Background="{Binding Path=PersonIdTwo[59], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
-
-
         <Button Grid.Column="0" Grid.Row="17" Content="7,1" Tag="60" Background="{Binding Path=PersonIdTwo[60], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="1" Grid.Row="17" Content="7,2" Tag="61" Background="{Binding Path=PersonIdTwo[61], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="2" Grid.Row="17" Content="7,3" Tag="62" Background="{Binding Path=PersonIdTwo[62], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
@@ -252,9 +217,6 @@
         <Button Grid.Column="7" Grid.Row="17" Content="7,8" Tag="67" Background="{Binding Path=PersonIdTwo[67], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="8" Grid.Row="17" Content="7,9" Tag="68" Background="{Binding Path=PersonIdTwo[68], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="9" Grid.Row="17" Content="7,10" Tag="69" Background="{Binding Path=PersonIdTwo[69], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
-
-
-
         <Button Grid.Column="0" Grid.Row="18" Content="8,1" Tag="70" Background="{Binding Path=PersonIdTwo[70], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="1" Grid.Row="18" Content="8,2" Tag="71" Background="{Binding Path=PersonIdTwo[71], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="2" Grid.Row="18" Content="8,3" Tag="72" Background="{Binding Path=PersonIdTwo[72], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
@@ -265,9 +227,6 @@
         <Button Grid.Column="7" Grid.Row="18" Content="8,8" Tag="77" Background="{Binding Path=PersonIdTwo[77], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="8" Grid.Row="18" Content="8,9" Tag="78" Background="{Binding Path=PersonIdTwo[78], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="9" Grid.Row="18" Content="8,5" Tag="79"  Background="{Binding Path=PersonIdTwo[79], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
-
-
-
         <Button Grid.Column="0" Grid.Row="19" Content="9,1" Tag="80" Background="{Binding Path=PersonIdTwo[80], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="1" Grid.Row="19" Content="9,2" Tag="81" Background="{Binding Path=PersonIdTwo[81], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="2" Grid.Row="19" Content="9,3" Tag="82" Background="{Binding Path=PersonIdTwo[82], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
@@ -278,7 +237,6 @@
         <Button Grid.Column="7" Grid.Row="19" Content="9,8" Tag="87" Background="{Binding Path=PersonIdTwo[87], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="8" Grid.Row="19" Content="9,9" Tag="88" Background="{Binding Path=PersonIdTwo[88], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="9" Grid.Row="19" Content="9,10" Tag="89" Background="{Binding Path=PersonIdTwo[89], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
-
         <Button Grid.Column="0" Grid.Row="20" Content="10,1" Tag="90" Background="{Binding Path=PersonIdTwo[90], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="1" Grid.Row="20" Content="10,2" Tag="91" Background="{Binding Path=PersonIdTwo[91], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="2" Grid.Row="20" Content="10,3" Tag="92" Background="{Binding Path=PersonIdTwo[92], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
@@ -289,7 +247,5 @@
         <Button Grid.Column="7" Grid.Row="20" Content="10,3" Tag="97" Background="{Binding Path=PersonIdTwo[97], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="8" Grid.Row="20" Content="10,4" Tag="98" Background="{Binding Path=PersonIdTwo[98], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
         <Button Grid.Column="9" Grid.Row="20" Content="10,5" Tag="99" Background="{Binding Path=PersonIdTwo[99], Mode=TwoWay, Converter={StaticResource YesNoToBooleanConverter2}}" Click="Button_Click_shot"/>
-
-
     </Grid>
 </Window>

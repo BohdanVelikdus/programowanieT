@@ -22,9 +22,6 @@ namespace programowanie__
             okno.DataContext = gra;
             okno.Show();
         }
-        
-
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
@@ -33,7 +30,6 @@ namespace programowanie__
             else if (((Game)plnPersonForm.DataContext).PersonIdOne[Convert.ToInt32(btn.Tag.ToString())] == 1)
                 ((Game)plnPersonForm.DataContext).PersonIdOne[Convert.ToInt32(btn.Tag.ToString())]--;
         }
-
         private void Button_Click_shot(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
@@ -41,7 +37,6 @@ namespace programowanie__
                 ((Game)plnPersonForm.DataContext).PersonIdTwo[Convert.ToInt32(btn.Tag.ToString())] += 2;
         }
     }
-
     public class YesNoToBooleanConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -59,20 +54,15 @@ namespace programowanie__
             }
             return false;
         }
-
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
             if (value is Colors)
             {
-                //if ((Colors)value == Colors.Red)
-                //    return 4;
-                //else
-                //    return 0;
+
             }
             return 0;
         }
     }
-
     public class YesNoToBooleanConverter2 : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -90,15 +80,11 @@ namespace programowanie__
             }
             return false;
         }
-
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
             if (value is Colors)
             {
-                //if ((Colors)value == Colors.Red)
-                //    return 4;
-                //else
-                //    return 0;
+
             }
             return 0;
         }
