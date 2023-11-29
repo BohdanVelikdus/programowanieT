@@ -13,12 +13,9 @@ namespace programowanie__
         public MainDser()
         {
             InitializeComponent();
-
             readFile(outFilePath);
-
             dgSimple.ItemsSource = listOfPersons;
         }
-
         public void writeFile(string xmlFilePath)
         {
             Serializer.SerializeToXml<List<Person>>(listOfPersons, xmlFilePath);
@@ -27,15 +24,12 @@ namespace programowanie__
         {
             listOfPersons = Serializer.DeserializeToObject<List<Person>>(xmlFilePath);
         }
-
         public void Button_AddPerson(object sender, RoutedEventArgs e)
         {
-            //Window1 okno = new Window1();
             Person person = new Person();
             AddPerson addPersonDialog = new AddPerson();
             addPersonDialog.DataContext = person;
             addPersonDialog.ShowDialog();
-
             if (addPersonDialog.IsOkPressed)
             {
                 listOfPersons.Add(person);
@@ -44,5 +38,4 @@ namespace programowanie__
             }
         }
     }
-
 }

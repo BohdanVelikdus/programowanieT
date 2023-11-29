@@ -15,13 +15,13 @@ namespace programowanie__
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void CompleteAdding(object sender, RoutedEventArgs e)
         {
             IsOkPressed = true;
             this.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void DiscardChanges(object sender, RoutedEventArgs e)
         {
             IsOkPressed = false;
             this.Close();

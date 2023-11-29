@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="MainDser" Height="450" Width="800">
     <Grid>
-        
         <DataGrid Name="dgSimple"/>
         <Button Content="Add person" Click="Button_AddPerson" Margin="81,10,130,397"/>
     </Grid>
