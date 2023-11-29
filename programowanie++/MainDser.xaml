@@ -1,12 +1,13 @@
-﻿<Window x:Class="programowanie__.MainWindow"
+﻿<Window x:Class="programowanie__.MainDser"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:programowanie__"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainDser" Height="450" Width="800">
     <Grid>
-
+        <DataGrid Name="dgSimple"/>
+        <Button Content="Add person" Click="Button_AddPerson" Margin="81,10,130,397"/>
     </Grid>
 </Window>
