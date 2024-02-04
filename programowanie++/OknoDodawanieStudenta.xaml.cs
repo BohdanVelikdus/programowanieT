@@ -3,11 +3,11 @@
 namespace programowanie__
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for OknoDodawanieStudenta.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class OknoDodawanieStudenta : Window
     {
-        public MainWindow()
+        public OknoDodawanieStudenta()
         {
             InitializeComponent();
         }

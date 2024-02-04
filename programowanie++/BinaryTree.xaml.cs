@@ -3,11 +3,11 @@
 namespace programowanie__
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for BinaryTree.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class BinaryTree : Window
     {
-        public MainWindow()
+        public BinaryTree()
         {
             InitializeComponent();
         }
