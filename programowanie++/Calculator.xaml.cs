@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows;
 
 namespace programowanie__
 {
@@ -17,6 +18,7 @@ namespace programowanie__
         {
             InitializeComponent();
         }
+
         private List<Button> lastClickedButtons = new List<Button>();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -192,5 +194,6 @@ namespace programowanie__
                     break;
             }
         }
+
     }
 }
