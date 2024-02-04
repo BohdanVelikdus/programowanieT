@@ -8,17 +8,12 @@
         Title="BinaryTree" Height="450" Width="800">
     <Grid>
         <Canvas>
-            <!-- Level 0 -->
             <Button Content="Root" Width="50" Height="30" Canvas.Left="200" Canvas.Top="20"/>
-
-            <!-- Level 1 -->
             <Button Content="Left Child" Width="50" Height="30" Canvas.Left="150" Canvas.Top="100"/>
             <Button Content="Right Child" Width="50" Height="30" Canvas.Left="250" Canvas.Top="100"/>
-
-            <!-- Level 2 -->
             <Button Content="Left Grandchild" Width="50" Height="30" Canvas.Left="100" Canvas.Top="200"/>
-            <Button Content="Right Grandchild" Width="50" Height="30" Canvas.Left="200" Canvas.Top="200"/>
-            <Button Content="Left Grandchild" Width="50" Height="30" Canvas.Left="300" Canvas.Top="200"/>
+                <Button Content="Right Grandchild" Width="50" Height="30" Canvas.Left="200" Canvas.Top="200"/>
+                <Button Content="Left Grandchild" Width="50" Height="30" Canvas.Left="300" Canvas.Top="200"/>
             <Button Content="Right Grandchild" Width="50" Height="30" Canvas.Left="400" Canvas.Top="200"/>
         </Canvas>
     </Grid>
